@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faSearch,faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ViewLayer';
+  title:string = "FunkyStore";
+  faShoppingCart:any = faShoppingCart;
+  faSearch = faSearch;
+
+
 }
