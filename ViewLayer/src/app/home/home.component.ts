@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -48,6 +49,7 @@ export class HomeComponent implements OnInit {
     (<HTMLElement>dots[this.slideCounter-1]).className += " active";
 
 
+
   }
 
 
@@ -58,6 +60,18 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
+    // set the first image on initialization of component
+
+  //  this.showSlide(this.slideCounter);
+
+  setInterval(() => {
+
+
+    this.slideCounter += 1;
+    this.showSlide(this.slideCounter);
+
+
+  },2000);
 
 
 
