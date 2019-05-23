@@ -1,8 +1,20 @@
 <div class="shop-grid">
-    <div class="container shop-grid1">
+    <div class="shop-grid1">
+      <div *ngFor="let item of itemsDataList">
+          <button class="accordian">{{item.category}}</button>
+          <div class="panel" *ngFor="let subitem of item.subcategories">
+            <div>
+              {{subitem.name}}
+            </div>
+          </div>
+
+      </div>
 
     </div>
-    <div class="container shop-grid2">
+    <div class="shop-grid2">
+
+    </div>
+    <div class="shop-grid3">
         <div>
             <h3>Available Products</h3>
             <input class="filterBox" type="text" placeholder="Filter products here" cols="20">

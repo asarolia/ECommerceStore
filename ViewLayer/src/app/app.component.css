@@ -27,34 +27,40 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5 {
   line-height: 1.2;
-}
+} */
 
 .headContainer{
   display:grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
-  padding :30px;
+  padding:3%;
+  border-bottom: #888 1px solid;
+  color: #888;
 
 }
 
 .title{
   grid-column:1 / 2;
 
+
 }
 
 .searchbox{
 
   grid-column: 4/6;
-  padding-top: 6%;
 
+
+}
+.prod-link{
+  grid-column:7;
 }
 
 .cart{
   grid-column: 8;
-  padding-top: 10%;
+
 }
