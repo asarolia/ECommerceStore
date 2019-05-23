@@ -1,0 +1,39 @@
+<div class="shop-grid">
+    <div class="container shop-grid1">
+
+    </div>
+    <div class="container shop-grid2">
+        <div>
+            <h3>Available Products</h3>
+            <input class="filterBox" type="text" placeholder="Filter products here" cols="20">
+        </div>
+        <p>Filtered By:{{ contentFilter }}</p>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Availibility</th>
+                <th>Price</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of productList">
+                <td><img src={{item.imageUrl}}/></td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productCode}}</td>
+                <td>Yes</td>
+                <td>{{item.price}}</td>
+                <td>{{item.starRating}}</td>
+                <td><button type="button" class="btn btn-primary">Add To Cart</button></td>
+
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+
+</div>

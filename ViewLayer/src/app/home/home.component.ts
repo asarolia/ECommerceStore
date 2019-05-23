@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     }
 
     // show specific image div
-    console.log('slide counter :'+ this.slideCounter);
+   // console.log('slide counter :'+ this.slideCounter);
     // subtract one from index as counter we started from 1
     (<HTMLElement>this.imageDiv[this.slideCounter-1]).style.display = 'block';
 
@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // set the first image on initialization of component
 
-  //  this.showSlide(this.slideCounter);
+    this.showSlide(this.slideCounter);
 
   setInterval(() => {
 
@@ -85,7 +85,7 @@ export class HomeComponent implements OnInit {
   }
 
   currentSlide(x:number):void{
-    console.log("clicked : "+ x);
+   // console.log("clicked : "+ x);
 
     this.showSlide(this.slideCounter = x);
   }

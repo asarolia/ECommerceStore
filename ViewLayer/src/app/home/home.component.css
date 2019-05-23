@@ -1,3 +1,6 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -77,7 +80,10 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.myDots, .btnShop{
+  text-align: center;
 
+}
 .active, .dot:hover {
   background-color: #717171;
 }

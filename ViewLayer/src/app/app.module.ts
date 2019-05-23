@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product/product-list.component';
+
+
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
@@ -12,7 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
