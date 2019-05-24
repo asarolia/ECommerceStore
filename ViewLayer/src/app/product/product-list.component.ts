@@ -1,5 +1,5 @@
 import { OnInit, Component } from '@angular/core';
-import {faPlus} from '@fortawesome/free-solid-svg-icons';
+import {faPlus, faMinus} from '@fortawesome/free-solid-svg-icons';
 
 import {IProducts} from './IProducts';
 import {IItems} from './IItems';
@@ -15,6 +15,8 @@ export class ProductListComponent implements OnInit{
 
   contentFilter:string = "";
   faPlus = faPlus;
+  faMinus = faMinus;
+  collapsed:boolean = true;
 
   itemsDataList:IItems[] = [
     {
@@ -629,9 +631,11 @@ export class ProductListComponent implements OnInit{
     if(classValue === "hide")
     {
       event.target.firstChild.parentNode.nextElementSibling.className = "show";
+      this.collapsed = false;
 
     }else{
       event.target.firstChild.parentNode.nextElementSibling.className = "hide";
+      this.collapsed = true;
 
     }
 
