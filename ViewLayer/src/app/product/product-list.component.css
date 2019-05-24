@@ -1,15 +1,15 @@
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
+.accordian {
+  background-color: whitesmoke;
   color: #444;
   cursor: pointer;
   padding: 18px;
   text-align: left;
-  border: none;
   outline: none;
   transition: 0.4s;
+  margin: 2px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -18,28 +18,42 @@
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+.hide {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
+.show {
+  padding: 0 18px;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+}
 
 .shop-grid{
   display:grid;
-  grid-template-columns: 30% 5% 65%;
+  grid-template-columns: 30% .5% 65%;
 }
 
 .shop-grid1{
   grid-column:1/2;
+  padding: 3%;
 }
 
 
 .shop-grid2{
   grid-column:2/3;
+  border-left: .5px solid gray;
+  height: inherit;
 }
 
 
 .shop-grid3{
   grid-column:3;
+  padding: 3%;
+}
+
+.acrd-symb{
+  margin :1px;
 }

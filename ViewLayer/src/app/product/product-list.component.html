@@ -1,11 +1,16 @@
 <div class="shop-grid">
     <div class="shop-grid1">
       <div *ngFor="let item of itemsDataList">
-          <button class="accordian">{{item.category}}</button>
-          <div class="panel" *ngFor="let subitem of item.subcategories">
-            <div>
-              {{subitem.name}}
-            </div>
+          <div class="accordian" (click)= "togglePanel($event)">
+            <span class="acrd-symb"><fa-icon [icon]="faPlus"></fa-icon></span>{{item.category}}
+          </div>
+          <div class="hide">
+              <div class="subpanel" *ngFor="let subitem of item.subcategories">
+                  <div>
+                    {{subitem.name}}
+                  </div>
+                </div>
+
           </div>
 
       </div>
